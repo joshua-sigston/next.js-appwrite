@@ -16,6 +16,7 @@ export default function SignupPage() {
 
   const onSignup = async (e: any) => {
     e.preventDefault();
+    console.log('tst');
     try {
       setIsLoading(true);
       const response = await axios.post('/api/users/signup', user);
